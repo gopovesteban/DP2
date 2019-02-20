@@ -1,0 +1,9 @@
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-software-tools *ngIf="loadedFeature ==='software'"></app-software-tools>
+      <app-design-tools *ngIf="loadedFeature ==='design'"></app-design-tools>
+    </div>
+  </div>
+</div>
