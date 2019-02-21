@@ -7,6 +7,7 @@
   <div class="col-xs-12">
     <app-software-tools-item *ngFor="let softwareTool of softwareTools"
                      [softwareTile]="softwareTool"
+                             (softwareToolSelected)="onToolSelected(softwareTool)"
     ></app-software-tools-item>
   </div>
 </div>
