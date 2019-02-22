@@ -8,6 +8,7 @@ import { DesignToolsComponent } from './design-tools/design-tools.component';
 import { SoftwareToolsListComponent } from './software-tools/software-tools-list/software-tools-list.component';
 import { SoftwareToolsItemComponent } from './software-tools/software-tools-item/software-tools-item.component';
 import { SoftwareToolsVersionComponent } from './software-tools/software-tools-version/software-tools-version.component';
+import { SoftwareHeaderComponent } from './header/software-header/software-header.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SoftwareToolsVersionComponent } from './software-tools/software-tools-v
     DesignToolsComponent,
     SoftwareToolsListComponent,
     SoftwareToolsItemComponent,
-    SoftwareToolsVersionComponent
+    SoftwareToolsVersionComponent,
+    SoftwareHeaderComponent
   ],
   imports: [
     BrowserModule

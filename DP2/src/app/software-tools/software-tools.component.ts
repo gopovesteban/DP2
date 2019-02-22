@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SoftwareToolsListComponent} from './software-tools-list/software-tools-list.component';
 import { SoftwareTileModel} from '../models/software-tile.model';
 import { SoftwareToolVersionModel } from '../models/software-tool-version.model';
+import { SoftwareHeaderComponent } from '../header/software-header/software-header.component';
 
 @Component({
   selector: 'app-software-tools',

@@ -1,7 +1,11 @@
 <div class="row">
-  <div class="col-xs-12"
+  <h5 style="text-align: center; color:gray">Tool Qualification Evidence History</h5>
+  <h4 style="margin-top:20px;">{{ softwareTool.name }}</h4>
+  <div class="col-xs-12" style="border: 1px solid rgb(213, 220, 226);"
   *ngFor="let version of softwareTool.versionsList">
-<h1>{{version.compliancy}}</h1>
-<h1>{{ version.resultsLink}}</h1>
+ <h5>{{ version.currentVersion }}</h5> 
+<h6>{{version.compliancy}}</h6>
+<h6>{{ version.qualifiedDate }}</h6>
+<h6>{{ version.resultsLink}}</h6>
   </div>
 </div>

@@ -1,12 +1,18 @@
-<div class="col-md-12">
-<app-software-tools-list></app-software-tools-list>
+<div class="row">
+<app-software-header></app-software-header>
+<div class="col-md-7">
+<app-software-tools-list
+(toolWasSelected)="selectedTool=$event"
+></app-software-tools-list>
 </div>
-<div class="col-md-12">
+<div class="col-md-5">
 <app-software-tools-version
 *ngIf="selectedTool; else infoText"
 [softwareTool]="selectedTool"
 ></app-software-tools-version>
   <ng-template #infoText>
-    <p>Click a tool to drill in into historic evidence</p>
+    <p style="margin-top:200px;">Click a tool to drill in into historic evidence</p>
   </ng-template>
+</div>
+<app-software-header></app-software-header>
 </div>
